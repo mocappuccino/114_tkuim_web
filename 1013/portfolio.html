@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的作品集 - Bootstrap 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <!-- 導航列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">胡詠棋</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">關於</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">技能</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">作品</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">聯絡</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="bg-light py-5">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-3">嗨，我是胡詠棋</h1>
+        <p class="lead mb-4">淡江大學資管系三年級的學生，歡迎參觀我的作品集！</p>
+        <a href="#portfolio" class="btn btn-primary btn-lg me-2">查看作品</a>
+        <a href="#contact" class="btn btn-outline-primary btn-lg">聯絡我</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">關於我</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center mb-4 mb-md-0">
+            <img src="0807.5.jpg" class="img-fluid rounded-circle" alt="個人照片">
+          </div>
+          <div class="col-md-6">
+            <h3 class="fw-bold text-primary">胡詠棋</h3>
+            <p class="fs-5 text-secondary">淡江大學資訊管理學系學生，熱愛畫圖及寫程式。</p>
+            <p class="text-muted">下面會展示我的作品成果^^。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">我的技能</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card text-center p-3 h-100">
+              <div class="card-body">
+                <div class="display-4 text-primary mb-3">💻</div>
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">擅長網頁設計與排版。</p>
+                <div class="progress mt-3">
+                  <div class="progress-bar bg-primary" style="width: 50%;">50%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-center p-3 h-100">
+              <div class="card-body">
+                <div class="display-4 text-success mb-3">⚙️</div>
+                <h5 class="card-title">Java</h5>
+                <p class="card-text">能實作互動功能與前端邏輯。</p>
+                <div class="progress mt-3">
+                  <div class="progress-bar bg-success" style="width: 70%;">70%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-center p-3 h-100">
+              <div class="card-body">
+                <div class="display-4 text-info mb-3">🎨</div>
+                <h5 class="card-title">設計/繪圖</h5>
+                <p class="card-text">能設計排版及所需圖樣。</p>
+                <div class="progress mt-3">
+                  <div class="progress-bar bg-info" style="width: 85%;">85%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">作品集</h2>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <img src="hw1013.1.png" class="card-img-top" alt="作品1">
+              <div class="card-body">
+                <h5 class="card-title">關於我</h5>
+                <p class="card-text">以html完成的自我介紹網站。</p>
+                <a href="#" class="btn btn-primary">查看詳情</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <img src="hw1013.2.png" class="card-img-top" alt="作品2">
+              <div class="card-body">
+                <h5 class="card-title">網頁設計</h5>
+                <p class="card-text">以開發者模式進行網頁編輯。</p>
+                <a href="#" class="btn btn-primary">查看詳情</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <img src="hw1013.3.png" class="card-img-top" alt="作品3">
+              <div class="card-body">
+                <h5 class="card-title">GitHub</h5>
+                <p class="card-text">完成創建github倉庫並管理專案。</p>
+                <a href="#" class="btn btn-primary">查看詳情</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">聯絡我</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">姓名</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">主旨</label>
+                <input type="text" class="form-control" id="subject">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">訊息</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">送出</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-2">追蹤我：</p>
+      <a href="https://lit.link/zh-tw/mocappuccino" class="text-white me-3">個人連結</a>
+      <a href="https://www.instagram.com/mocappuccino._?igsh=NXlleHd5N2xzd3Fr&utm_source=qr" class="text-white me-3">Instagram</a>
+      <a href="https://github.com/mocappuccino/114_tkuim_web.git" class="text-white">GitHub</a>
+      <hr class="border-light">
+      <p class="mb-0">&copy; 2025 胡詠棋. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
