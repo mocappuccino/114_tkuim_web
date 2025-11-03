@@ -1,0 +1,45 @@
+/* Week07_Lab styles */
+
+/* 密碼強度條 */
+.password-strength {
+  height: 1.25rem;
+  line-height: 1.25rem;
+  color: #fff;
+  font-size: 0.85rem;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  width: 0%;
+  background-color: transparent;
+  transition: width 0.2s ease, background-color 0.2s ease;
+  display: none; /* 由 JS 控制顯示 */
+  overflow: hidden;
+}
+
+/* 興趣勾選的 label 選中樣式 */
+.checkbox-group label {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.checkbox-group label.checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* 使 checkbox 本身和 label 看起來整潔一點 */
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.35rem;
+}
+
+/* disabled 按鈕的樣式微調 */
+#submit-button:disabled {
+  opacity: 0.7;
+}
+
+/* small responsive tweaks */
+@media (max-width: 480px) {
+  .checkbox-group label { display:block; margin-bottom:0.5rem; }
+}
