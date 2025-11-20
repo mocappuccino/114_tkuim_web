@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "fa512ebb-6c12-4f67-a951-8422b4534548",
+		"name": "Week09 Signup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50217047",
+		"_collection_link": "https://mocappuccino-8262147.postman.co/workspace/6f4930fd-d20c-4711-804a-e116f7b37a4e/collection/50217047-fa512ebb-6c12-4f67-a951-8422b4534548?action=share&source=collection_link&creator=50217047"
+	},
+	"item": [
+		{
+			"name": "POST /api/signup",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('狀態碼 201', () => pm.response.code === 201);\r",
+							"pm.expect(pm.response.json()).to.have.property('participant');\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"測試同學\",\r\n  \"email\": \"test@example.com\",\r\n  \"phone\": \"0912345678\",\r\n  \"password\": \"abc12345\",\r\n  \"confirmPassword\": \"abc12345\",\r\n  \"interests\": [\"前端\", \"後端\"],\r\n  \"terms\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/signup",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/signup",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": ""
+		}
+	]
+}

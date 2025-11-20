@@ -1,5 +1,6 @@
 {
-  "name": "server",
+  "name": "signup-server",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
