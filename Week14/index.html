@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoYoLAB Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Google Fonts for a premium look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons (Optional, using CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="logo">HoYoLAB Clone</div>
+            <div class="nav-links">
+                <a href="#" class="active">首頁</a>
+                <a href="#">酒館</a>
+                <a href="#">官方資訊</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="搜尋...">
+            </div>
+            <div class="user-actions">
+                <i class="fa-regular fa-bell"></i>
+                <div class="user-avatar">
+                    <img src="https://ui-avatars.com/api/?name=User&background=0D8ABC&color=fff" alt="User">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar-left">
+            <ul class="menu-list">
+                <li class="menu-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>首頁</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>絕區零</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-solid fa-star"></i>
+                    <span>崩壞：星穹鐵道</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>原神</span>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-solid fa-cube"></i>
+                    <span>崩壞3rd</span>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Center Feed -->
+        <main class="feed-container" id="feed-container">
+            <!-- Posts will be injected here by JS -->
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <div class="widget-card">
+                <h3>熱門話題</h3>
+                <ul class="topic-list">
+                    <li>#絕區零公測</li>
+                    <li>#流螢</li>
+                    <li>#同人圖</li>
+                    <li>#攻略</li>
+                </ul>
+            </div>
+            <div class="widget-card">
+                <h3>打卡簽到</h3>
+                <div class="check-in-preview">
+                    <button class="btn-check-in">立即簽到</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
