@@ -28,6 +28,18 @@
 
 ## API 說明
 於docs文件內(api_spec.md)
+- GET	/api/transactions 取得所有帳目	支援前端列表與圖表渲染
+- POST	/api/transactions 建立新紀錄	 包含類別、金額與日期
+- PUT	/api/transactions/:id   修改特定紀錄	支援原地編輯功能
+- DELETE	/api/transactions/:id   刪除紀錄    一鍵移除錯誤帳務
+
+## 系統架構
+1. Presentation Layer (React): 使用者介面與圖表顯示，透過 Axios 與後端通訊。
+2. API Layer (Express): 定義 RESTful 路由，處理邏輯驗證。
+3. Data Access Layer (Mongoose): 透過 Schema 定義資料格式，與 MongoDB 進行串接。
+4. Database Layer (MongoDB): 儲存 JSON 格式的帳務文件。
+
+
 
 ### DEMO 影片
 https://drive.google.com/drive/folders/1rXuXK_MbKIGxLt_7XJ5ccSsl_DNbV6JU?usp=sharing
