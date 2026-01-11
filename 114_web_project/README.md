@@ -14,7 +14,11 @@
 - **後端**: Node.js, Express, MongoDB
 
 ## 🚀 執行步驟
-1. **資料庫**：啟動 Docker 中的 MongoDB 容器。
+1. **啟動 MongoDB**: 
+   開啟終端機並執行 `docker start mongodb_container`。
+   ```bash
+   docker start mongodb_container
+   docker run -d --name mongodb_container -p 27017:27017 mongo
 2. **後端 (Backend)**：
    ```bash
    cd backend
