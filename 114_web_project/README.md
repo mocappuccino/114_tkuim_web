@@ -1,18 +1,35 @@
-# 114上 網路程式設計期末專題 - 個人記帳系統
+# 114 網路程式設計期末專題 - 記帳小幫手
 
-## 1. 專案主題
-本專案是一個「白色簡潔風」的個人記帳系統，旨在幫助使用者管理日常收支。
+這是一款簡潔風記帳程式，功能淺顯易懂，任何人都可以輕易上手。
 
-## 2. 技術選型
-- **前端**: React.js (搭配 Tailwind CSS 實現簡潔介面)
-- **後端**: Node.js + Express
-- **資料庫**: MongoDB (使用 Mongoose 進行資料建模)
+## 核心功能
+- **記帳管理**：支援收入/支出分類、自定義日期錄入。
+- **智慧排序**：首頁顯示「近期新增」3筆，切換「顯示全部」按日期排序。
+- **原地編輯**：點擊清單項目名稱可直接修改內容與金額。
+- **數據分析**：左側滑動抽屜顯示當月收支對比圖與支出圓餅圖。
+- **日期搜尋**：可精確篩選特定日期的消費紀錄。
 
-## 3. 已實作功能 (CRUD)
-- [ ] **Create**: 新增收支紀錄
-- [ ] **Read**: 查看歷史帳單清單
-- [ ] **Update**: 修改錯誤的金額或分類
-- [ ] **Delete**: 刪除單筆紀錄
+## 技術
+- **前端**: React, Tailwind CSS, Recharts, Axios
+- **後端**: Node.js, Express, MongoDB
 
-## 4. 如何在本機執行
-(開發中，後續補充...)
+## 🚀 執行步驟
+1. **資料庫**：啟動 Docker 中的 MongoDB 容器。
+2. **後端 (Backend)**：
+   ```bash
+   cd backend
+   npm install
+   npx nodemon server.js
+3. **前端 (Frontend)**：
+   ```bash
+   cd frontend
+    npm install
+    npm run dev
+
+## API 說明
+- GET /api/transactions - 取得所有帳目
+
+- POST /api/transactions - 新增帳目
+
+### DEMO 影片
+https://drive.google.com/drive/folders/1rXuXK_MbKIGxLt_7XJ5ccSsl_DNbV6JU?usp=sharing

@@ -1,0 +1,37 @@
+### 伺服器基礎變數
+@baseUrl = http://localhost:5000/api
+
+### 1. 取得所有帳目 (Read)
+# 用於確認目前資料庫中所有的收支紀錄
+GET {{baseUrl}}/transactions
+
+###
+
+### 2. 新增一筆支出 (Create)
+# 測試新增一筆今天的餐飲消費
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "title": "美味午餐",
+  "amount": 120,
+  "type": "expense",
+  "category": "餐飲",
+  "date": "2026-01-12"
+}
+
+###
+
+### 3. 新增一筆收入 (Create)
+# 測試新增一筆薪資收入
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "title": "一月薪資",
+  "amount": 50000,
+  "type": "income",
+  "category": "薪資",
+  "date": "2026-01-05"
+}
+

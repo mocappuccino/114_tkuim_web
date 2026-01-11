@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "0286ff31-fada-4e63-bd23-a952ffd368a0",
+		"name": "114_web_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50217047",
+		"_collection_link": "https://mocappuccino-8262147.postman.co/workspace/moca's-Workspace~6f4930fd-d20c-4711-804a-e116f7b37a4e/collection/50217047-0286ff31-fada-4e63-bd23-a952ffd368a0?action=share&source=collection_link&creator=50217047"
+	},
+	"item": [
+		{
+			"name": "POST 新增",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"買雞排\",\r\n  \"amount\": 95,\r\n  \"type\": \"expense\",\r\n  \"category\": \"餐飲\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET 讀取",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
