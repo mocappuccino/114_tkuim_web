@@ -23,4 +23,18 @@ router.post('/', async (req, res) => {
   }
 });
 
+// 更新資料 (Update)
+router.put('/:id', async (req, res) => {
+  try {
+    const updatedTransaction = await Transaction.findByIdAndUpdate(
+      req.params.id, 
+      req.body, 
+      { new: true } // 回傳更新後的資料
+    );
+    res.json(updatedTransaction);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+});
+
 module.exports = router;
