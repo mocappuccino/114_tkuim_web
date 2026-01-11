@@ -27,9 +27,7 @@
     npm run dev
 
 ## API 說明
-- GET /api/transactions - 取得所有帳目
-
-- POST /api/transactions - 新增帳目
+於docs文件內(api_spec.md)
 
 ### DEMO 影片
 https://drive.google.com/drive/folders/1rXuXK_MbKIGxLt_7XJ5ccSsl_DNbV6JU?usp=sharing
